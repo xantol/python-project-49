@@ -10,6 +10,9 @@ brain-even:
 brain-calc:
 	poetry run brain-calc
 
+brain-gcd:
+	poetry run brain-gcd
+
 build:
 	poetry build
 
@@ -24,3 +27,9 @@ reinstall:
 
 lint:
 	poetry run flake8 brain_games
+
+rec:
+	asciinema rec demo.cast
+
+upload:
+	asciinema upload demo.cast
