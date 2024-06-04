@@ -3,6 +3,7 @@ from random import randint, choice
 
 question = 'What is the result of the expression'
 
+
 def play_game():
     num1 = randint(1, 100)
     num2 = randint(1, 100)
