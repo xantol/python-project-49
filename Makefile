@@ -32,7 +32,7 @@ lint:
 	poetry run flake8 brain_games
 
 rec:
-	asciinema rec demo.cast
+	asciinema rec --overwrite demo.cast
 
 upload:
 	asciinema upload demo.cast
