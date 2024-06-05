@@ -1,4 +1,4 @@
-#нагуглил метод join)
+# нагуглил метод join)
 from random import randint
 
 

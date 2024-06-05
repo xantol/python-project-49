@@ -8,7 +8,7 @@ def play_game():
     num = randint(2, 100)
     print(f'Question: {num}')
     if num == 2:
-	return 'yes'
+        return 'yes'
     for divider in range(2, num):
         if num % divider == 0:
             return 'no'
