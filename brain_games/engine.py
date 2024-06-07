@@ -16,22 +16,14 @@ def get_answer():
     return answer
 
 
-def check_answer(answer, correct_answer):
-    if answer == correct_answer:
-        print('Correct!')
-        return True
-    else:
-        return False
-
-
 def play_engine(game_module):
     user = welcome_user()
     print(game_module.question)
     for _ in range(GAME_ROUNDS):
         correct_answer = game_module.play_game()
         answer = get_answer()
-        if check_answer(answer, correct_answer):
-            continue
+        if answer == correct_answer:
+            print('Correct!')
         else:
             print(
                 f"'{answer}' is wrong answer ;(. Correct answer was "
