@@ -20,7 +20,9 @@ def play_engine(game_module):
     user = welcome_user()
     print(game_module.question)
     for _ in range(GAME_ROUNDS):
-        correct_answer = game_module.play_game()
+        answer_list = game_module.play_game()
+        print(answer_list[0])
+        correct_answer = answer_list[1]
         answer = get_answer()
         if answer == correct_answer:
             print('Correct!')
