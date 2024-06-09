@@ -1,7 +1,7 @@
 from random import randint
 
 
-question = 'Answer "yes" if the number is even, otherwise answer "no".'
+main_question = 'Answer "yes" if the number is even, otherwise answer "no".'
 
 
 def is_even(number):
@@ -10,7 +10,7 @@ def is_even(number):
 
 def play_game():
     number = randint(1, 500)
-    game_question = f'Question: {number}'
+    question = f'Question: {number}'
     if is_even(number):
-        return [game_question, 'yes']
-    return [game_question, 'no']
+        return [question, 'yes']
+    return [question, 'no']

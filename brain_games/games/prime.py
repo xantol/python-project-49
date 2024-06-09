@@ -1,7 +1,7 @@
 from random import randint
 
 
-question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
+main_question = 'Answer "yes" if given number is prime. Otherwise answer "no".'
 
 
 def is_prime(num):
@@ -15,7 +15,7 @@ def is_prime(num):
 
 def play_game():
     num = randint(2, 100)
-    print(f'Question: {num}')
+    question = f'Question: {num}'
     if is_prime(num):
-        return 'yes'
-    return 'no'
+        return [question, 'yes']
+    return [question, 'no']

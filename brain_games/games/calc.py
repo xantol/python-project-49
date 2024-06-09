@@ -1,7 +1,7 @@
 from random import randint, choice
 
 
-question = 'What is the result of the expression'
+main_question = 'What is the result of the expression'
 
 
 def calculate(num1, num2, operator):
@@ -18,5 +18,5 @@ def play_game():
     num1 = randint(1, 100)
     num2 = randint(1, 100)
     operator = choice(['+', '-', '*'])
-    print(f'Question: {num1} {operator} {num2}')
-    return str(calculate(num1, num2, operator))
+    question = f'Question: {num1} {operator} {num2}'
+    return [question, str(calculate(num1, num2, operator))]
