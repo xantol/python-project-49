@@ -18,7 +18,7 @@ def get_answer():
 
 def play_engine(game_module):
     user = welcome_user()
-    print(game_module.main_question)
+    print(game_module.RULES)
     for _ in range(GAME_ROUNDS):
         question, correct_answer = game_module.play_game()
         print(question)

@@ -1,7 +1,7 @@
 from random import randint
 
 
-main_question = 'What number is missing in the progression?'
+RULES = 'What number is missing in the progression?'
 
 
 def make_progression():
@@ -19,4 +19,4 @@ def play_game():
     progression_list[index] = '..'
     progression_stroke = ' '.join(str(elem) for elem in progression_list)
     question = f'Question: {progression_stroke}'
-    return [question, str(correct_answer)]
+    return question, str(correct_answer)
